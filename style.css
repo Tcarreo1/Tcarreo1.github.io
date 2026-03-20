@@ -1,3 +1,6 @@
+/* Alot of the code is repeated per page. There has to be a way to optimize this so code is not repeated. Currently looking into how to do this but have been
+focused too much on the design of the webpage and content and not code optimization. */
+
 /*Transformers font used for project*/
 @font-face {
     font-family: 'Transformers';
@@ -63,7 +66,7 @@ td,th{
 /* End Universal CSS for all Pages*/
 
 /* Start CSS for index.html page */
-.IndexImage{
+.IndexImage{ /* CSS for image on all pages, each page has its own background and CSS is used to fit the image within the page no matter the size */
     min-height: 100vh;
     margin: 0;
     background-image:url("Images/Home_Page.jpg");
@@ -75,7 +78,7 @@ td,th{
     color: white;
     font-family: Arial, sans-serif;
 }
-
+/* CSS for each title page. this is for each page but the color background changes per title, trying to see if theres a way to optimize this for cleaner code*/
 .Title-banner{
     text-align: center;
     padding: 20px;
@@ -191,8 +194,9 @@ td,th{
     transform: scale(1.03);
     box-shadow: 0 0 25px rgba(52, 21, 57, 0.7);
 }
-
-.DecepticonBlock.left{
+/* this is to make some word boxes go left or rigt. This is so that I can put images above certain boxes and not have them clump together. 
+See if there is a way to optimize this so it is not repeated in the code */
+.DecepticonBlock.left{ 
     margin-right: auto;
 }
 
