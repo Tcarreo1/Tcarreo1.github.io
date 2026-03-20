@@ -1,0 +1,448 @@
+/*Transformers font used for project*/
+@font-face {
+    font-family: 'Transformers';
+    src: url("Fonts/Transformers Movie.ttf")format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Universal CSS for all Pages*/
+body{
+    color: white;
+    margin: 0;
+    background-color: #000;
+}
+.navbar {
+    background: black;
+    border-top: 2px solid darkgrey;
+    border-bottom: 2px solid darkgrey;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+.navbar a{
+    font-family: 'Transformers';
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    background: #444;
+    transform: scale(1.05);
+    border-bottom: 3px solid darkgrey;
+}
+
+.content{
+    padding: 30px;
+}
+
+table{
+    font-family: 'Transformers';
+    border-collapse: collapse;
+    width: 100;
+}
+td,th{
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: transparent;
+}
+
+.spaced-paragraph{
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+/* End Universal CSS for all Pages*/
+
+/* Start CSS for index.html page */
+.IndexImage{
+    min-height: 100vh;
+    margin: 0;
+    background-image:url("Images/Home_Page.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.Title-banner{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(black,#222);
+    -webkit-text-stroke: 1px #444;
+}
+
+.Title-banner h1{
+    font-family: 'Transformers';
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+
+    background: linear-gradient(
+    to bottom,
+    #f5f5 0,
+    #d1d1 15,
+    #ffff 30,
+    #9c9c9c 45,
+    #f0f0f0 60,
+    #7a7a7a 75,
+    #e6e6e6 100,
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 
+    0px 2px 2px #000,
+    0px 2px 2px #000,
+    0px 0px 8px #888,
+    0px 0px 15px #00aaff; 
+}
+/* End CSS for index.html page */
+
+
+/* Start CSS for Decepticons page */
+.decepticonsImage{
+    min-height: 100vh;
+    margin: 0;
+    background-image:url("Images/Decepticon_wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.Decepticon-Title{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(black,#222);
+    -webkit-text-stroke: 1px #444;
+}
+
+.Decepticon-Title h1{
+    font-family: 'Transformers';
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+
+    background: linear-gradient(
+    to bottom,
+    #f5f5 0,
+    #d1d1 15,
+    #ffff 30,
+    #9c9c9c 45,
+    #f0f0f0 60,
+    #7a7a7a 75,
+    #e6e6e6 100,
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 
+    0px 2px 2px #000,
+    0px 2px 2px #000,
+    0px 0px 8px #888,
+    0px 0px 15px purple; 
+}
+
+.DecepticonBlock{
+    max-width: 600px;
+    margin: 40px 20px;
+    padding: 20px 25px;
+
+    background: linear-gradient(145deg, #1a1a1a, #111);
+    color: #e6e6e6;
+
+    border-left: 6px solid #8712B6;
+    border-radius: 8px;
+
+    box-shadow: 0 0 15px rgba(52, 21, 57, 0.6);
+
+    line-height: 1.6;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.DecepticonBlock h2{
+    margin-top: 0;
+    color: #8712B6;
+    border-bottom: 2px solid #8712B6;
+    padding-bottom: 6px;
+}
+.DecepticonBlock strong{
+    color: #8712B6;
+}
+
+.DecepticonBlock:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(52, 21, 57, 0.7);
+}
+
+.DecepticonBlock.left{
+    margin-right: auto;
+}
+
+.DecepticonBlock.right{
+    margin-left: auto;
+}
+
+.DecepticonBlock.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* End CSS for Decepticons page */
+
+/* Start CSS for Autobots page */
+.AutobotImage{
+    min-height: 100vh;
+    margin: 0;
+    background-image:url("Images/wallpaperflare.com_wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.Autobot-Title{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(black,#222);
+    -webkit-text-stroke: 1px #444;
+}
+
+.Autobot-Title h1{
+    font-family: 'Transformers';
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+
+    background: linear-gradient(
+    to bottom,
+    #f5f5 0,
+    #d1d1 15,
+    #ffff 30,
+    #9c9c9c 45,
+    #f0f0f0 60,
+    #7a7a7a 75,
+    #e6e6e6 100,
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 
+    0px 2px 2px #000,
+    0px 2px 2px #000,
+    0px 0px 8px #888,
+    0px 0px 15px red; 
+}
+.AutobotBlock{
+    max-width: 600px;
+    margin: 40px 20px;
+    padding: 20px 25px;
+
+    background: linear-gradient(145deg, #1a1a1a, #111);
+    color: #e6e6e6;
+
+    border-left: 6px solid #e62429;
+    border-radius: 8px;
+
+    box-shadow: 0 0 15px rgba(230, 36, 41, 0.6);
+
+    line-height: 1.6;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.AutobotBlock h2{
+    margin-top: 0;
+    color: #e62429;
+    border-bottom: 2px solid #e62429;
+    padding-bottom: 6px;
+}
+.AutobotBlock strong{
+    color: #ff3b3b;
+}
+
+.AutobotBlock:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(230, 36, 41, 0.7);
+}
+/* End CSS for Autobots page */
+
+/* Start CSS for Concepts page */
+.ConceptsImage{
+    min-height: 100vh;
+    margin: 0;
+    background-image:url("Images/Concepts_Page.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.Concepts-Title{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(black,#222);
+    -webkit-text-stroke: 1px #444;
+}
+
+.Concepts-Title h1{
+    font-family: 'Transformers';
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+
+    background: linear-gradient(
+    to bottom,
+    #f5f5 0,
+    #d1d1 15,
+    #ffff 30,
+    #9c9c9c 45,
+    #f0f0f0 60,
+    #7a7a7a 75,
+    #e6e6e6 100,
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 
+    0px 2px 2px #000,
+    0px 2px 2px #000,
+    0px 0px 8px #888,
+    0px 0px 15px green; 
+}
+
+/* End CSS for Conceptss page */
+
+/* Start CSS for Concepts page */
+.ResourcesImage{
+    min-height: 100vh;
+    margin: 0;
+    background-image:url("Images/References_Page.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.Resources-Title{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(black,#222);
+    -webkit-text-stroke: 1px #444;
+}
+
+.Resources-Title h1{
+    font-family: 'Transformers';
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+
+    background: linear-gradient(
+    to bottom,
+    #f5f5 0,
+    #d1d1 15,
+    #ffff 30,
+    #9c9c9c 45,
+    #f0f0f0 60,
+    #7a7a7a 75,
+    #e6e6e6 100,
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 
+    0px 2px 2px #000,
+    0px 2px 2px #000,
+    0px 0px 8px #888,
+    0px 0px 15px lavender; 
+}
+
+/* End CSS for Concepts page */
+
+/* Start CSS for About page*/
+.AboutImage{
+    min-height: 100vh;
+    margin: 0;
+    background-image:url("Images/About_Page.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.About-Title{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(black,#222);
+    -webkit-text-stroke: 1px #444;
+}
+
+.About-Title h1{
+    font-family: 'Transformers';
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+
+    background: linear-gradient(
+    to bottom,
+    #f5f5 0,
+    #d1d1 15,
+    #ffff 30,
+    #9c9c9c 45,
+    #f0f0f0 60,
+    #7a7a7a 75,
+    #e6e6e6 100,
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 
+    0px 2px 2px #000,
+    0px 2px 2px #000,
+    0px 0px 8px #888,
+    0px 0px 15px turquoise; 
+}
+/*End CSS for About Page */
