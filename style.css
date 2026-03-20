@@ -398,7 +398,7 @@ See if there is a way to optimize this so it is not repeated in the code */
 .AboutImage{
     min-height: 100vh;
     margin: 0;
-    background-image:url("Tcarreo1.github.io/Images/About_Page.jpg");
+    background-image:url("./Images/About_Page.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
