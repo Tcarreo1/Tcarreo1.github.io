@@ -12,6 +12,7 @@ body{
     margin: 0;
     background-color: #000;
 }
+/* CSS for navbar on all pages. Went with a gray bavkground to reflect the transformers tone. May change navbar design to reflect changes in design pages*/
 .navbar {
     background: black;
     border-top: 2px solid darkgrey;
@@ -30,7 +31,7 @@ body{
 }
 
 .navbar a{
-    font-family: 'Transformers';
+    font-family: 'Transformers'; /* font for the different pages */
     display: block;
     padding: 15px 25px;
     color: white;
@@ -38,7 +39,7 @@ body{
     font-weight: bold;
 }
 
-.navbar a:hover{
+.navbar a:hover{ /* code to make the tab for each page in the navbar grow when mouse is hovering over it. As well as added a slight color change */
     background: #444;
     transform: scale(1.05);
     border-bottom: 3px solid darkgrey;
@@ -48,6 +49,7 @@ body{
     padding: 30px;
 }
 
+/* CSS for transformers table. Will alter this later on as I am not happy with the current design */
 table{
     font-family: 'Transformers';
     border-collapse: collapse;
@@ -58,15 +60,6 @@ td,th{
     text-align: left;
     padding: 8px;
 }
-tr:nth-child(even){
-    background-color: transparent;
-}
-
-.spaced-paragraph{
-    margin-bottom: 20px;
-    margin-left: 40px;
-}
-
 /* End Universal CSS for all Pages*/
 
 /* Start CSS for index.html page */
