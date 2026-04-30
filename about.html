@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <Title>Transformers: Robots in Disguise</Title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body class="AboutImage">
+            <header class="About-Title">
+                <h1>About</h1>
+            </header>
+            <nav class="navbar">
+                <div class="hamburger" onclick="togglemenu">☰</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="autobots.html">Autobots</a></li>
+                    <li><a href="decepticons.html">Decepticons</a></li>
+                    <li><a href="concepts.html">Concepts</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="IndexBlock">
+                <P>Hello Everyone. I am <strong>Tenoch Carreon</strong>. I am 23 years old and currently attend Kennesaw State University. 
+                    Along with attending KSU as a Full Time Student working towards by Bachelors in IT. I also work there Full Time as a 
+                    Technical Support Analyst in KSU's University Information Technology Services departmemt. I provide on-field IT Support for hundreds 
+                    of faculty and staff on KSU's Marietta Campus. I have been in the IT field for about 4 years now and have met many amazing people.</P>
+            </div>
+
+            <div class="IndexBlock right">
+                <p>For my <strong>Webpage Project</strong>, I have gone with a wiki based concept that provides information on 
+                    the well known science fiction series called the Transformers. The Main page consists of a summary 
+                    of the Transformers lore mostly revolving around the Michael Bay live action iteration of the series. It 
+                    dwelves into the beginning of the Transformers history. Telling of how the seemingly endless war between
+                    the two Transformers factions, Autobots and Decepticons, started.
+                </p>
+            </div>
+
+            <div class="IndexBlock">
+                <p>The <strong>Autobots</strong> page of the project tells of the Autobots side of the story. What they are fighting for,
+                    their beliefs and ideals. What they did before the war started and what they do now. How Transformers who
+                    were once Cybertronian librarians or consruction workers are now soldiers in the war against the "Evil" Decepticons.
+                    Led by their fearless leader and the last Prime, <strong>Optimus Prime</strong>. 
+                </p>
+            </div>
+            <div class="IndexBlock right">
+                <p>The <strong>Decepticon</strong> page of the project tells of the Decepticon side of the story. What they are fighting for,
+                    their beliefs and ideals. Their stories before the war and what they went through before the war started. They
+                    too were once regular Cybertronian civilians living day to day life before having to become soldiers in the never ending
+                    war between the autobots. Now led by their ruthless leader, <strong>Megatron</strong>, they fight mostly out of fear 
+                    but some out of loyalty. 
+                </p>
+            </div>
+
+            <div class="IndexBlock">
+                <p>The <strong>Concepts</strong> page notes what concepts I used for the project. The way I wrote the CSS and how I organized it
+                    to reflect what I needed for each page of this project. Why I also seperated the CSS file for the quiz to better keep them seperated
+                    as I believe it is easier that way in the long run. Javascript file is also external as it makes it easier to manage. 
+                </p>
+            </div>
+
+            <div class="IndexBlock right">
+                <p>The <strong>Resources</strong> page consists of links to websites I used to help with my webpage project.  
+                </p>
+            </div>
+            <footer>
+                <p>&copy; This webpage is part of a Project for my IT 3203 Intro to Web Development Course. </p>
+                <a href="URL">https://ksuweb.github.io/IT3203/</a>
+            </footer>
+
+            <!--Script that toggles the hamburger menu to automatically close when the link is tapped-->
+            <script>
+                function toggleMenu() {
+                    document.getElementById("navMenu").classList.toggle("show");
+                }
+
+                document.querySelectorAll("#navMenu a").forEach(link => {
+                    link.addEventListener("click", () => {
+                        document.getElementById("navMenu").classList.remove("show");
+                    });
+                });
+            </script>
+
+        </body>
+</html>
