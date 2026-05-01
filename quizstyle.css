@@ -1,0 +1,103 @@
+#quiz-wrapper {
+    min-height: 100vh;
+    padding: 40px;
+    padding-top: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+#quiz-wrapper h1 {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Quiz container */
+#TFQUIZ {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* Question blocks */
+.QuizQuestions {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Question text */
+.QuizQuestions p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Answer labels */
+label {
+    display: block;
+    margin: 6px 0;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+label:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Buttons */
+button {
+    margin-top: 20px;
+    padding: 12px 22px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+/* Submit button (Autobot red/blue vibe) */
+#submitbutton {
+    background: linear-gradient(to right, red, darkred);
+    color: white;
+}
+
+/* Retake button */
+button:nth-of-type(2) {
+    background-color: gray;
+    color: white;
+    margin-left: 10px;
+}
+
+/* Score */
+#result {
+    margin-top: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+h2 {
+text-align: center;
+}
+
+.correct {
+    background-color: rgba(0,255,0,0.2);
+    border: 1px solid lime;
+}
+
+.wrong{
+    background-color: rgba(255,0,0,0.2);
+    border: 1px solid red
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Transformers: Robots in Disguise</Title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="quizstyle.css">
+    </head>
+        <body class="ConceptsImage">
+            <header class="Concepts-Title">
+                <h1>Concepts</h1>
+            </header>
+            <nav class="navbar">
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="autobots.html">Autobots</a></li>
+                    <li><a href="decepticons.html">Decepticons</a></li>
+                    <li><a href="concepts.html">Concepts</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+
+<main>
+            <div class="IndexBlock">
+                <h2>External Stylesheets & Font Embedding</h2>
+                <p>I used an external CSS file and a custom font.</p>
+                <p>@font-face {<br> 
+                    font-family: 'Tranformers';<br>
+                    src: url("Fonts/Transformers Movie.ttf") format('truetype');<br>
+                }<br>
+                <br>
+                <strong>Why This Works:</strong><br>
+                <ul>
+                    <li>@font-face lets you load a custom dont that isn't installed on the users computer</li>
+                    <li>This makes your site look unique and consistent on every device.</li>
+                    <li>Applies to titles and tables</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="IndexBlock right">
+                <h2>Reusable Global CSS (Site-Wide Styling)</h2>
+                <p>Created universal styles that apply to every page.</p>
+                <p>body {<br> 
+                    color: white;<br>
+                    margin: 0;<br>
+                    background-color: #000>br>
+                }<br>
+                .navbar{...}<br>
+                footer{...}<br>
+                <br>
+                <strong>Why This Works:</strong><br>
+                <ul>
+                    <li>This keeps the website consistent across all pages</li>
+                    <li>If the footer or navbar is changed once, it changes on every page .</li>
+                    <li>This represents a "Don't repeat youself" design</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="IndexBlock">
+                <h2>Flexbox Layout</h2>
+                <p>Used Flexbox to align text and images side by side.</p>
+                <p>.DecepticonLayout {<br> 
+                    display: flex;<br>
+                    gap: 30px;<br>
+                    align-items: flex-start;<br>
+                }<br>
+                <br>
+                <strong>Why This Works:</strong><br>
+                <ul>
+                    <li><strong>display:flex</strong> turns the container into a flexible layout.</li>
+                    <li><strong>gap</strong> creates spacing between columns.</li>
+                    <li><strong>flex</strong> properties control column width.</li>
+                </ul>
+                </p>
+            </div>
+             <div class="IndexBlock right">
+                <h2>Responsive Background Images</h2>
+                <p>Each page uses full-screen background images.</p>
+                <p>.decepticonsImage {<br> 
+                    min-height: 100vh;<br>
+                    background-image:url(...);<br>
+                    background-size: cover;<br>
+                    background-attachment: fixed;<br>
+                }<br>
+                <br>
+                <strong>Why This Works:</strong><br>
+                <ul>
+                    <li><strong>100vh</strong> makes the page fill the entire screen height.</li>
+                    <li><strong>background-size: cover</strong> scales the image to fill the screen.</li>
+                    <li><strong>background-attachment: fixed</strong> creates a parallex effect when scrolling.</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="IndexBlock">
+                <h2>Javascript form handling & validation</h2>
+                <p><strong>Created an interactive quiz with grading and reset.</strong></p>
+                <p>const answers = { q1:"c", q2:"c", q3:"b", q4:"a", q5:"a" };</p>
+                <p>if (!selected) {<br>
+                    alert("Please answer all questions before submitting!");<br>
+                    return;<br>
+                }<br>
+                <p><strong>Form validation</strong><br>
+                    if (!selected) {<br>
+                    alert("Please answer all questions before submitting!");<br>
+                    return;<br>
+                    }<br>
+                    <br>
+                </p>
+                <strong>This Demonstrates:</strong><br>
+                <ul>
+                    <li>DOM manipulation.</li>
+                    <li>Event handling</li>
+                    <li>Form validation</li>
+                    <li>Dynamic concent updates</li>
+                </ul>
+                </p>
+            </div>
+            
+        <!-- Quiz form (JavaScript reads user selections and grades quiz) -->
+        <div id="quiz-wrapper">
+            <h1>Transformers Quiz</h1>
+
+            <form id="TFQUIZ" name="TFQUIZ">
+                <!--Question 1-->
+                <div class="QuizQuestions">
+                    <p>1. Who is the leader of the Autobots?</p>
+                        <label><input type="radio" name="q1" value="a">Bumblebee</label><br>
+                        <label><input type="radio" name="q1" value="b">Megatron</label><br>
+                        <label><input type="radio" name="q1" value="c">Optimus Prime</label><br>
+                        <label><input type="radio" name="q1" value="d">Cybertron</label><br>
+                </div>
+                 <!--Question 2-->
+                <div class="QuizQuestions">
+                    <p>2. What planet are Transformers from?</p>
+                        <label><input type="radio" name="q2" value="a">Earth</label><br>
+                        <label><input type="radio" name="q2" value="b">Pluto</label><br>
+                        <label><input type="radio" name="q2" value="c">Cybertron</label><br>
+                        <label><input type="radio" name="q2" value="d">Midgard</label><br>
+                </div>
+                 <!--Question 3-->
+                <div class="QuizQuestions">
+                    <p>3. Who leads the Decepticons?</p>
+                        <label><input type="radio" name="q3" value="a">Iron Hide</label><br>
+                        <label><input type="radio" name="q3" value="b">Megatron</label><br>
+                        <label><input type="radio" name="q3" value="c">Ratchet</label><br>
+                        <label><input type="radio" name="q3" value="d">Shockwave</label><br>
+                </div>
+                 <!--Question 4-->
+                <div class="QuizQuestions">
+                    <p>4. Which faction is considered to be the "good" one?</p>
+                        <label><input type="radio" name="q4" value="a">Autobots</label><br>
+                        <label><input type="radio" name="q4" value="b">Decepticons</label><br>
+                        <label><input type="radio" name="q4" value="c">Call of Duty</label><br>
+                        <label><input type="radio" name="q4" value="d">Space Racer</label><br>
+                </div>
+                 <!--Question 5-->
+                <div class="QuizQuestions">
+                    <p>5. Who directed the live action Transformers Movies from 2007 - 2017?</p>
+                        <label><input type="radio" name="q5" value="a">Michael Bay</label><br>
+                        <label><input type="radio" name="q5" value="b">Optimus Prime</label><br>
+                        <label><input type="radio" name="q5" value="c">Steven Spielberg</label><br>
+                        <label><input type="radio" name="q5" value="d">M. Night Shyamalan</label><br>
+                </div>
+
+                <!-- Buttons trigger JavaScript grading and reset functions -->
+                <button id="submitbutton" type="button" onclick="Quizgrade()">Submit Quiz</button>
+                <button type="button" onclick="Quizreset()">Retake Quiz</button>
+            </form>
+
+            <!-- JavaScript dynamically writes the score here -->
+           <h2 id="result"></h2>
+        </div>
+
+</main>
+
+            <!-- Footer remains at bottom using flexbox layout (margin-top:auto in CSS) -->
+            <footer>
+                <p>&copy; This webpage is part of a Project for my IT 3203 Intro to Web Development Course. </p>
+                <a href="https://ksuweb.github.io/IT3203/" target="_blank">https://ksuweb.github.io/IT3203/</a>
+            </footer>
+
+            <!-- link to quiz.js file-->
+            <script src="quiz.js"></script>
+
+            <!-- JavaScript for mobile navigation functionality -->
+            <!--Script that toggles the hamburger menu to automatically close when the link is tapped-->
+            <script>
+                function toggleMenu() {
+                    document.getElementById("navMenu").classList.toggle("show");
+                }
+
+                document.querySelectorAll("#navMenu a").forEach(link => {
+                    link.addEventListener("click", () => {
+                        document.getElementById("navMenu").classList.remove("show");
+                    });
+                });
+            </script>
+        </body>
+</html>
