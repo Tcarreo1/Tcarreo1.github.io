@@ -1,0 +1,754 @@
+/*Transformers font used for project*/
+@font-face {
+    font-family: 'Transformers';
+    src: url("Fonts/Transformers Movie.ttf")format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Universal CSS for all Pages*/
+body{
+    color: white;
+    margin: 0;
+    background-color: #000;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar { /* beginning of the CSS for the Navbar */
+    background: black;
+    border-top: 2px solid darkgrey;
+    border-bottom: 2px solid darkgrey;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.navbar li {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    font-family: Arial, sans-serif;
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    background: #444;
+    transform: scale(1.05);
+    border-bottom: 3px solid darkgrey;
+}
+
+/* Hamburger hidden on desktop */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    padding: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+.content{
+    padding: 30px;
+}
+
+table{ 
+    font-family: 'Transformers';
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+}
+td,th{
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+/* End Universal CSS for all Pages*/
+
+/* Start CSS for index.html page */
+
+.IndexBlock{ /*CSS for the text blocks */
+    max-width: 600px;
+    margin: 40px 20px;
+    padding: 20px 25px;
+
+    background: linear-gradient(145deg, #1a1a1a, #111);
+    color: #e6e6e6;
+
+    border-left: 6px solid #1274b6;
+    border-radius: 8px;
+
+    box-shadow: 0 0 15px rgba(52, 21, 57, 0.6);
+
+    line-height: 1.6;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.IndexBlock h2{
+    margin-top: 0;
+    color: #1274b6;
+    border-bottom: 2px solid #1274b6;
+    padding-bottom: 6px;
+}
+.IndexBlock strong{
+    color: #1274b6;
+}
+
+.IndexBlock:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(13, 86, 95, 0.7);
+}
+
+.IndexBlock.left{
+    margin-right: auto;
+}
+
+.IndexBlock.right{
+    margin-left: auto;
+}
+
+.IndexBlock.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.IndexImage{
+    min-height: 100vh;
+    margin: 0;
+    background-image:url("Images/Home_Page.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.Title-banner{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(black,#222);
+    -webkit-text-stroke: 1px #444;
+}
+
+.Title-banner h1{
+    font-family: 'Transformers';
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+
+    background: linear-gradient(
+    to bottom,
+    #f5f5 0,
+    #d1d1 15,
+    #ffff 30,
+    #9c9c9c 45,
+    #f0f0f0 60,
+    #7a7a7a 75,
+    #e6e6e6 100,
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 
+    0px 2px 2px #000,
+    0px 2px 2px #000,
+    0px 0px 8px #888,
+    0px 0px 15px #00aaff; 
+}
+/* End CSS for index.html page */
+
+
+/* Start CSS for Decepticons page */
+.decepticonsImage{
+    min-height: 100vh;
+    margin: 0;
+    background-image:url("Images/Decepticon_wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.Decepticon-Title{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(black,#222);
+    -webkit-text-stroke: 1px #444;
+}
+.Decepticon-Title h1{
+    font-family: 'Transformers';
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+
+    background: linear-gradient(
+    to bottom,
+    #f5f5 0,
+    #d1d1 15,
+    #ffff 30,
+    #9c9c9c 45,
+    #f0f0f0 60,
+    #7a7a7a 75,
+    #e6e6e6 100,
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 
+    0px 2px 2px #000,
+    0px 2px 2px #000,
+    0px 0px 8px #888,
+    0px 0px 15px purple; 
+}
+
+.DecepticonBlock{ /*CSS for the text blocks */
+    max-width: 600px;
+    margin: 40px 20px;
+    padding: 20px 25px;
+
+    background: linear-gradient(145deg, #1a1a1a, #111);
+    color: #e6e6e6;
+
+    border-left: 6px solid #8712B6;
+    border-radius: 8px;
+
+    box-shadow: 0 0 15px rgba(52, 21, 57, 0.6);
+
+    line-height: 1.6;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.DecepticonBlock h2{
+    margin-top: 0;
+    color: #8712B6;
+    border-bottom: 2px solid #8712B6;
+    padding-bottom: 6px;
+}
+.DecepticonBlock strong{
+    color: #8712B6;
+}
+
+.DecepticonText{
+    flex: 2;
+    min-width: 0;
+}
+.DecepticonBlock:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(52, 21, 57, 0.7);
+}
+.DecepticonBlock.left{
+    margin-right: auto;
+}
+.DecepticonBlock.right{
+    margin-left: auto;
+}
+.DecepticonBlock.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* End CSS for Decepticons page */
+
+/* Start CSS for Autobots page */
+.AutobotImage{
+    min-height: 100vh;
+    margin: 0;
+    background-image:url("Images/wallpaperflare.com_wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.Autobot-Title{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(black,#222);
+    -webkit-text-stroke: 1px #444;
+}
+.Autobot-Title h1{
+    font-family: 'Transformers';
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+
+    background: linear-gradient(
+    to bottom,
+    #f5f5 0,
+    #d1d1 15,
+    #ffff 30,
+    #9c9c9c 45,
+    #f0f0f0 60,
+    #7a7a7a 75,
+    #e6e6e6 100,
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 
+    0px 2px 2px #000,
+    0px 2px 2px #000,
+    0px 0px 8px #888,
+    0px 0px 15px red; 
+}
+
+.AutobotBlock{ /*CSS for the text blocks */
+    max-width: 600px;
+    margin: 40px 20px;
+    padding: 20px 25px;
+
+    background: linear-gradient(145deg, #1a1a1a, #111);
+    color: #e6e6e6;
+
+    border-left: 6px solid #e62429;
+    border-radius: 8px;
+
+    box-shadow: 0 0 15px rgba(230, 36, 41, 0.6);
+
+    line-height: 1.6;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.AutobotBlock h2{
+    margin-top: 0;
+    color: #e62429;
+    border-bottom: 2px solid #e62429;
+    padding-bottom: 6px;
+}
+.AutobotBlock strong{
+    color: #ff3b3b;
+}
+.AutobotBlock:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(230, 36, 41, 0.7);
+}
+
+/* End CSS for Autobots page */
+
+/* Start CSS for Concepts page */
+.ConceptsImage{
+    min-height: 100vh;
+    margin: 0;
+    background-image:url("Images/Concepts_Page.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.Concepts-Title{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(black,#222);
+    -webkit-text-stroke: 1px #444;
+}
+
+.Concepts-Title h1{
+    font-family: 'Transformers';
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+
+    background: linear-gradient(
+    to bottom,
+    #f5f5 0,
+    #d1d1 15,
+    #ffff 30,
+    #9c9c9c 45,
+    #f0f0f0 60,
+    #7a7a7a 75,
+    #e6e6e6 100,
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 
+    0px 2px 2px #000,
+    0px 2px 2px #000,
+    0px 0px 8px #888,
+    0px 0px 15px green; 
+}
+
+/* End CSS for Conceptss page */
+
+/* Start CSS for Concepts page */
+.ResourcesImage{
+    min-height: 100vh;
+    margin: 0;
+    background-image:url("Images/References_Page.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.Resources-Title{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(black,#222);
+    -webkit-text-stroke: 1px #444;
+}
+
+.Resources-Title h1{
+    font-family: 'Transformers';
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+
+    background: linear-gradient(
+    to bottom,
+    #f5f5 0,
+    #d1d1 15,
+    #ffff 30,
+    #9c9c9c 45,
+    #f0f0f0 60,
+    #7a7a7a 75,
+    #e6e6e6 100,
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 
+    0px 2px 2px #000,
+    0px 2px 2px #000,
+    0px 0px 8px #888,
+    0px 0px 15px lavender; 
+}
+
+.ResourcesBlock{ /*CSS for the text blocks */
+    max-width: 600px;
+    margin: 40px 20px;
+    padding: 20px 25px;
+
+    background: linear-gradient(145deg, #1a1a1a, #111);
+    color: #e6e6e6;
+
+    border-left: 6px solid #4c865b;
+    border-radius: 8px;
+
+    box-shadow: 0 0 15px rgba(62, 109, 65, 0.7);
+
+    line-height: 1.6;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.ResourcesBlock h2{
+    margin-top: 0;
+    color: #4c865b;
+    border-bottom: 2px solid #4c865b;
+    padding-bottom: 6px;
+}
+.ResourcesBlock strong{
+    color: #4c865b;
+}
+.ResourcesBlock:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(62, 109, 65, 0.7);
+}
+
+.ResourcesBlock.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* End CSS for Concepts page */
+
+/* Start CSS for About page*/
+.AboutImage{
+    min-height: 100vh;
+    margin: 0;
+    background-image:url("Images/About_Page.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.About-Title{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(black,#222);
+    -webkit-text-stroke: 1px #444;
+}
+
+.About-Title h1{
+    font-family: 'Transformers';
+    font-size: 70px;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+
+    background: linear-gradient(
+    to bottom,
+    #f5f5 0,
+    #d1d1 15,
+    #ffff 30,
+    #9c9c9c 45,
+    #f0f0f0 60,
+    #7a7a7a 75,
+    #e6e6e6 100,
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 
+    0px 2px 2px #000,
+    0px 2px 2px #000,
+    0px 0px 8px #888,
+    0px 0px 15px turquoise; 
+}
+/*End CSS for About Page */
+
+/*Start CSS for Footer */
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+
+footer a{
+
+    color: white;
+}
+
+/*End CSS for footer*/
+
+/*Start CSS for images*/
+
+/* the css below allows me to have the images on the right hand side of the page*/
+.DecepticonLayout{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.DecepticonText{
+    flex: 2;
+}
+.DecepticonImages{
+    flex: 0 0 260px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.DecepticonImages img{
+    width: 220px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/*-------------------*/
+
+.AutobotLayout{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.AutobotText{
+    flex: 2;
+    min-width: 0;
+}
+.AutobotImages{
+    flex: 0 0 260px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.AutobotImages img{
+    width: 220px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*End of CSS for images*/
+
+
+/*Start CSS for Mobile Devices*/
+
+@media (max-width: 768px) { 
+
+    .hamburger {
+        display: block;        /* shows button */
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        display: none;          /* hide menu by default */
+        width: 100%;
+        background: black;
+    }
+
+    .navbar ul.show {
+        display: flex;          /* show when toggled */
+    }
+
+    .navbar a {
+        padding: 14px;
+        border-bottom: 1px solid #444;
+    }
+}
+
+@media (max-width: 768px){ /* disables parralax backgrounds on mobile devices*/
+    .IndexImage,
+    .decepticonsImage,
+    .AutobotImage,
+    .ConceptsImage,
+    .ResourcesImage,
+    .AboutImage{
+        background-attachment: scroll; /* for mobile browsers use scroll instead of fixed for background position */
+    }
+    
+}
+
+@media (max-width: 768px) { /* Makes the big title text responsive */
+    .Title-banner h1,
+    .Autobot-Title h1,
+    .Decepticon-Title h1,
+    .Concepts-Title h1,
+    .Resources-Title h1,
+    .About-Title h1 {
+        font-size: 38px;
+        letter-spacing: 3px;
+    }
+}
+
+@media (max-width: 768px) { /* fixes the content block spacing on mobile */
+    .IndexBlock,
+    .AutobotBlock,
+    .DecepticonBlock,
+    .ResourcesBlock {
+        margin: 20px 10px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 768px) { /* allows the content boxes and images to stack vertically on mobile and not side by side leading to a message image*/
+    .AutobotLayout,
+    .DecepticonLayout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AutobotImages,
+    .DecepticonImages {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .AutobotImages img,
+    .DecepticonImages img {
+        width: 45%;
+        max-width: 180px;
+    }
+}
+
+
+@media (max-width: 768px) { /*improves quiz sizing on mobile devices */
+    #quiz-wrapper {
+        padding: 15px;
+    }
+
+    #TFQUIZ {
+        padding: 18px;
+    }
+
+    .QuizQuestions p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .AutobotLayout,
+    .DecepticonLayout {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .AutobotText,
+    .DecepticonText {
+        width: 100%;
+    }
+
+    .AutobotBlock,
+    .DecepticonBlock,
+    table.AutobotBlock,
+    table.DecepticonBlock {
+        max-width: 100%;      /* override the 600px limit */
+        width: 100%;
+        margin: 20px 0;       /* remove side margins causing inset */
+    }
+}
+
+@media (max-width:768px){
+    .AutobotImages,
+    .DecepticonImages{
+        width:100%;
+        gap:15px;
+    }
+}
+
+/* End CSS for Mobile devices*/ 
