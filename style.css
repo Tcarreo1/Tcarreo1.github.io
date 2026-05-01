@@ -228,7 +228,7 @@ td,th{
 
 .DecepticonBlock{ /*CSS for the text blocks */
     max-width: 600px;
-    margin: 40px 0;
+    margin: 40px 20px;
     padding: 20px 25px;
 
     background: linear-gradient(145deg, #1a1a1a, #111);
@@ -251,6 +251,10 @@ td,th{
 .DecepticonBlock strong{
     color: #8712B6;
 }
+.DecepticonText{
+    flex: 2;
+    min-width: 0;
+{
 .DecepticonBlock:hover{
     transform: scale(1.03);
     box-shadow: 0 0 25px rgba(52, 21, 57, 0.7);
@@ -565,7 +569,7 @@ footer a{
     flex: 2;
 }
 .DecepticonImages{
-    flex: 0 0 auto;
+    flex: 0 0 260px;
 
     display: flex;
     flex-direction: column;
